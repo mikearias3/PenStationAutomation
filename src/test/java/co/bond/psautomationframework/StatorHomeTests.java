@@ -1,5 +1,6 @@
 package co.bond.psautomationframework;
 
+import co.bond.psautomationframework.statorpageobjects.Stator_NavBar;
 import co.bond.psautomationframework.statorpageobjects.Stator_HomePage;
 import org.junit.After;
 import org.junit.Before;
@@ -18,8 +19,19 @@ public class StatorHomeTests
     {
         Driver.Navigate("http://stator-testing.ps.bondco.io");
 
+        Stator_NavBar navBar = new Stator_NavBar(Driver.Instance);
+        navBar.ClickOnStatorHomeButton();
+    }
+
+    @Test
+    public void Add_Batch_To_Shipment()
+    {
+        Driver.Navigate("http://stator-testing.ps.bondco.io");
+
         Stator_HomePage home = new Stator_HomePage(Driver.Instance);
-        home.ClickOnStatorHomeButton();
+        home.SelectRowElement("25922");
+        home.AddRowElementToFavorites("25922");
+
     }
 
     @After
