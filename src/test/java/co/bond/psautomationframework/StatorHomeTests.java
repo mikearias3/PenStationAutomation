@@ -1,7 +1,10 @@
 package co.bond.psautomationframework;
 
+import co.bond.psautomationframework.statorpageobjects.Stator_CurrentShipmentPage;
 import co.bond.psautomationframework.statorpageobjects.Stator_NavBar;
 import co.bond.psautomationframework.statorpageobjects.Stator_HomePage;
+import co.bond.psautomationframework.statorpageobjects.Stator_ShipmentSummaryPage;
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,10 +15,10 @@ import org.junit.Test;
 public class StatorHomeTests
 {
     @Before
-    public void Initialize() { Driver.Initialize(); }
+    public void initialize() { Driver.Initialize(); }
 
     @Test
-    public void User_Can_Launch_Stator()
+    public void user_Can_Launch_Stator()
     {
         Driver.Navigate("http://stator-testing.ps.bondco.io");
 
@@ -30,8 +33,25 @@ public class StatorHomeTests
 
         Stator_HomePage home = new Stator_HomePage(Driver.Instance);
         home.SelectRowElement("25922");
-        home.AddRowElementToFavorites("25922");
+        home.ClickOnAddToShipmentButton();
+        //... Validate Current Shipment Screen
+    }
 
+    @Test
+    public void Submit_Order_With_1_Batch()
+    {
+        Driver.Navigate("http://stator-testing.ps.bondco.io");
+
+        Stator_HomePage home = new Stator_HomePage(Driver.Instance);
+        home.SelectRowElement("25853");
+        home.ClickOnAddToShipmentButton();
+        home.ClickOnCurrentShipmentButton();
+
+        Stator_CurrentShipmentPage shipmentPage = new Stator_CurrentShipmentPage(Driver.Instance);
+        shipmentPage.submitShipment();
+
+        Stator_ShipmentSummaryPage shipmentSummaryPage = new Stator_ShipmentSummaryPage(Driver.Instance);
+        Assert.assertNotNull(shipmentSummaryPage.pageTitle);
     }
 
     @After
