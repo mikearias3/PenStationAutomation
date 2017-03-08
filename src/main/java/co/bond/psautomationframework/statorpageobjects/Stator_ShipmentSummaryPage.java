@@ -21,6 +21,6 @@ public class Stator_ShipmentSummaryPage {
     public Stator_ShipmentSummaryPage(WebDriver instance) {
         this.instance = instance;
         PageFactory.initElements(instance, this);
-        Driver.Wait(1);
+        Driver.wait(1);
     }
 }

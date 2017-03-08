@@ -26,7 +26,7 @@ public class Stator_CurrentShipmentPage {
     public Stator_CurrentShipmentPage(WebDriver instance) {
         this.instance = instance;
         PageFactory.initElements(instance, this);
-        Driver.Wait(1);
+        Driver.wait(1);
     }
 
     public void modifyBatchQuantity(String id, int quantity)

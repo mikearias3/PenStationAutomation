@@ -21,7 +21,7 @@ public class Stator_Page {
 
     public void clickOnCurrentShipmentButton()
     {
-        Driver.Wait(1);
+        Driver.wait(1);
         currentShipmentButton.click();
     }
 

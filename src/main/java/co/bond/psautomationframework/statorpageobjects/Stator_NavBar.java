@@ -31,8 +31,13 @@ public class Stator_NavBar {
     }
 
     public void clickOnStatorHomeButton() {
-        Driver.Wait(1);
+        Driver.wait(1);
         statorHomeButton.click();
+    }
+
+    public void clickOnFavoriteBatchesButton() {
+        Driver.wait(1);
+        favoriteBatchesButton.click();
     }
 }
 

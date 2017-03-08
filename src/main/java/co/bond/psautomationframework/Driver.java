@@ -12,18 +12,18 @@ import java.util.concurrent.TimeUnit;
  */
 public class Driver
 {
-    public static WebDriver Instance;
+    public static WebDriver instance;
 
-    public static void Initialize()
+    public static void initialize()
     {
         System.setProperty("webdriver.chrome.driver", "chromedriver.mac");
-        Instance = new ChromeDriver();
-        Instance.manage().window().setSize(new Dimension(1280,730));
-        Instance.manage().window().setPosition(new Point(0,0));
-        Instance.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        instance = new ChromeDriver();
+        instance.manage().window().setSize(new Dimension(1280,730));
+        instance.manage().window().setPosition(new Point(0,0));
+        instance.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    public static void Wait(int seconds)
+    public static void wait(int seconds)
     {
         try {
             TimeUnit.SECONDS.sleep(seconds);
@@ -32,13 +32,13 @@ public class Driver
         }
     }
 
-    public static void Close()
+    public static void close()
     {
-        Instance.close();
+        instance.close();
     }
 
-    public static void Navigate(String url)
+    public static void navigate(String url)
     {
-        Instance.navigate().to(url);
+        instance.navigate().to(url);
     }
 }
