@@ -1,5 +1,7 @@
 package co.bond.psautomationframework;
 
+import co.bond.psautomationframework.data.BatchID;
+import co.bond.psautomationframework.data.URL;
 import co.bond.psautomationframework.statorpageobjects.Stator_CurrentShipmentPage;
 import co.bond.psautomationframework.statorpageobjects.Stator_NavBar;
 import co.bond.psautomationframework.statorpageobjects.Stator_HomePage;
@@ -20,32 +22,35 @@ public class StatorHomeTests
     @Test
     public void user_Can_Launch_Stator()
     {
-        Driver.Navigate("http://stator-testing.ps.bondco.io");
+        Driver.Navigate(URL.statorTesting);
 
         Stator_NavBar navBar = new Stator_NavBar(Driver.Instance);
-        navBar.ClickOnStatorHomeButton();
+        navBar.clickOnStatorHomeButton();
     }
 
     @Test
-    public void Add_Batch_To_Shipment()
+    public void add_Batch_To_Shipment()
     {
-        Driver.Navigate("http://stator-testing.ps.bondco.io");
+        Driver.Navigate(URL.statorTesting);
 
         Stator_HomePage home = new Stator_HomePage(Driver.Instance);
-        home.SelectRowElement("25922");
-        home.ClickOnAddToShipmentButton();
-        //... Validate Current Shipment Screen
+        home.selectRowElement(BatchID.b25854);
+        home.clickOnAddToShipmentButton();
+        home.clickOnCurrentShipmentButton();
+
+        Stator_CurrentShipmentPage currentShipmentPage = new Stator_CurrentShipmentPage(Driver.Instance);
+        currentShipmentPage.clickBatchLink(BatchID.b25854);
     }
 
     @Test
-    public void Submit_Order_With_1_Batch()
+    public void submit_Order_With_1_Batch()
     {
-        Driver.Navigate("http://stator-testing.ps.bondco.io");
+        Driver.Navigate(URL.statorTesting);
 
         Stator_HomePage home = new Stator_HomePage(Driver.Instance);
-        home.SelectRowElement("25853");
-        home.ClickOnAddToShipmentButton();
-        home.ClickOnCurrentShipmentButton();
+        home.selectRowElement(BatchID.b25853);
+        home.clickOnAddToShipmentButton();
+        home.clickOnCurrentShipmentButton();
 
         Stator_CurrentShipmentPage shipmentPage = new Stator_CurrentShipmentPage(Driver.Instance);
         shipmentPage.submitShipment();
@@ -55,7 +60,7 @@ public class StatorHomeTests
     }
 
     @After
-    public void CleanUp()
+    public void cleanUp()
     {
         Driver.Close();
     }

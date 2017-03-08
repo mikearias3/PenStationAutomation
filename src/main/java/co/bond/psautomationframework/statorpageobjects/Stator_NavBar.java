@@ -30,7 +30,7 @@ public class Stator_NavBar {
         PageFactory.initElements(instance, this);
     }
 
-    public void ClickOnStatorHomeButton() {
+    public void clickOnStatorHomeButton() {
         Driver.Wait(1);
         statorHomeButton.click();
     }

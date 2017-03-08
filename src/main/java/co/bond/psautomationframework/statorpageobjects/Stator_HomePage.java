@@ -21,19 +21,19 @@ public class Stator_HomePage extends Stator_Page{
         Driver.Wait(1);
     }
 
-    public void SelectRowElement (String id)
+    public void selectRowElement(String id)
     {
         tableRowCheckbox = instance.findElement(By.id(id));
         tableRowCheckbox.click();
     }
 
-    public void ClickOnRowElement (String id)
+    public void clickOnRowElement(String id)
     {
         tableRowLink = instance.findElement(By.linkText(id));
         tableRowLink.click();
     }
 
-    public void AddRowElementToFavorites (String id)
+    public void addRowElementToFavorites(String id)
     {
         tableRowFavorite = instance.findElement(By.id("star-" + id));
         tableRowFavorite.click();

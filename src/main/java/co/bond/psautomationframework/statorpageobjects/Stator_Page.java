@@ -19,13 +19,13 @@ public class Stator_Page {
     public WebElement tableRowLink;
     public WebElement tableRowFavorite;
 
-    public void ClickOnCurrentShipmentButton()
+    public void clickOnCurrentShipmentButton()
     {
         Driver.Wait(1);
         currentShipmentButton.click();
     }
 
-    public void ClickOnAddToShipmentButton()
+    public void clickOnAddToShipmentButton()
     {
         addToShipmentButton.click();
     }
