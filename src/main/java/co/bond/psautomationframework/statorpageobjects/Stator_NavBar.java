@@ -39,6 +39,11 @@ public class Stator_NavBar {
         Driver.wait(1);
         favoriteBatchesButton.click();
     }
+
+    public void clickOnShipmentHistoryButton() {
+        Driver.wait(1);
+        shipmentHistory.click();
+    }
 }
 
 

@@ -71,6 +71,47 @@ public class StatorHomeTests
         Assert.assertNotNull(shipmentSummaryPage.pageTitle);
     }
 
+    @Test
+    public void check_Batch_In_Shipment_History_After_Being_Sent()
+    {
+        Driver.navigate(URL.statorTesting);
+
+        Stator_HomePage home = new Stator_HomePage(Driver.instance);
+        home.selectRowElement(BatchID.b25857);
+        home.clickOnAddToShipmentButton();
+        home.clickOnCurrentShipmentButton();
+
+        Stator_CurrentShipmentPage shipmentPage = new Stator_CurrentShipmentPage(Driver.instance);
+        shipmentPage.submitShipment();
+
+        Stator_NavBar navBar = new Stator_NavBar(Driver.instance);
+        navBar.clickOnShipmentHistoryButton();
+
+        Stator_ShipmentHistoryPage shipmentHistoryPage = new Stator_ShipmentHistoryPage(Driver.instance);
+        shipmentHistoryPage.clickOnRowLink(BatchID.b25857);
+    }
+
+    @Test
+    public void send_Batch_From_Shipment_History_Screen()
+    {
+        Driver.navigate(URL.statorTesting);
+
+        Stator_NavBar navBar = new Stator_NavBar(Driver.instance);
+        navBar.clickOnShipmentHistoryButton();
+
+        Stator_ShipmentHistoryPage shipmentHistoryPage = new Stator_ShipmentHistoryPage(Driver.instance);
+        shipmentHistoryPage.selectRowElement(BatchID.b25854);
+        Driver.wait(5);
+        shipmentHistoryPage.clickOnAddToShipmentButton();
+        shipmentHistoryPage.clickOnCurrentShipmentButton();
+
+        Stator_CurrentShipmentPage currentShipmentPage = new Stator_CurrentShipmentPage(Driver.instance);
+        currentShipmentPage.submitShipment();
+
+        Stator_ShipmentSummaryPage shipmentSummaryPage = new Stator_ShipmentSummaryPage(Driver.instance);
+        Assert.assertNotNull(shipmentSummaryPage.pageTitle);
+    }
+
     @After
     public void cleanUp()
     {
