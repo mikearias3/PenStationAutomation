@@ -55,6 +55,23 @@ public class StatorHomeTests
     }
 
     @Test
+    public void remove_Batch_From_Favorites()
+    {
+        Driver.navigate(URL.statorTesting);
+
+        Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
+        homePage.addRowElementToFavorites(BatchID.b25855);
+
+        Stator_NavBar navBar = new Stator_NavBar(Driver.instance);
+        navBar.clickOnFavoriteBatchesButton();
+
+        Stator_FavoriteBatchesPage favoriteBatchesPage = new Stator_FavoriteBatchesPage(Driver.instance);
+        favoriteBatchesPage.removeRowElementToFavorites(BatchID.b25855);
+
+        Assert.assertFalse(favoriteBatchesPage.verifyRowExistance(BatchID.b25855));
+    }
+
+    @Test
     public void submit_Order_With_1_Batch()
     {
         Driver.navigate(URL.statorTesting);
@@ -69,6 +86,12 @@ public class StatorHomeTests
 
         Stator_ShipmentSummaryPage shipmentSummaryPage = new Stator_ShipmentSummaryPage(Driver.instance);
         Assert.assertNotNull(shipmentSummaryPage.pageTitle);
+    }
+
+    @Test
+    public void submir_Order_With_Several_Batches()
+    {
+        //Waiting for Quantity to receive an ID for this.
     }
 
     @Test

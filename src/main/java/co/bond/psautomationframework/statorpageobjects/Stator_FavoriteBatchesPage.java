@@ -1,5 +1,6 @@
 package co.bond.psautomationframework.statorpageobjects;
 
+import jdk.nashorn.internal.runtime.ECMAException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,5 +20,25 @@ public class Stator_FavoriteBatchesPage extends Stator_Page {
 
     public void clickOnRowLink(String id) {
         tableRowLink = instance.findElement(By.linkText(id));
+    }
+
+    public void removeRowElementToFavorites(String id) {
+        tableRowFavorite = instance.findElement(By.id("star-" + id));
+        tableRowFavorite.click();
+    }
+
+    public boolean verifyRowExistance(String id) {
+        tableRowLink = null;
+
+        try {
+            tableRowLink = instance.findElement(By.linkText(id));
+        } catch (Exception e) {}
+
+
+        if (tableRowLink != null)
+        {
+            return true;
+        }
+        return false;
     }
 }
