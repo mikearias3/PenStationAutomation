@@ -22,6 +22,7 @@ public class Stator_CurrentShipmentPage {
     private WebElement batchQuantity;
     private WebElement batchFavoriteButton;
     private WebElement batchRemoveButton;
+    private WebElement tableRowLink;
 
     public Stator_CurrentShipmentPage(WebDriver instance) {
         this.instance = instance;
@@ -44,8 +45,10 @@ public class Stator_CurrentShipmentPage {
 
     public void removeBatchFromShipment(String id)
     {
-        batchRemoveButton = instance.findElement(By.id("25852"));
+        Driver.wait(1);
+        batchRemoveButton = instance.findElement(By.id(id));
         batchRemoveButton.click();
+        Driver.wait(3);
     }
 
     public void clickBatchLink(String id)
@@ -56,5 +59,20 @@ public class Stator_CurrentShipmentPage {
 
     public void submitShipment() {
         submitShipmentButton.click();
+    }
+
+    public boolean verifyRowExistance(String id) {
+        tableRowLink = null;
+
+        try {
+            tableRowLink = instance.findElement(By.linkText(id));
+        } catch (Exception e) {}
+
+
+        if (tableRowLink != null)
+        {
+            return true;
+        }
+        return false;
     }
 }

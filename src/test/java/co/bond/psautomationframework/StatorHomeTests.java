@@ -40,6 +40,22 @@ public class StatorHomeTests
     }
 
     @Test
+    public void remove_Batch_From_Shipment()
+    {
+        Driver.navigate(URL.statorTesting);
+
+        Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
+        homePage.selectRowElement(BatchID.b25855);
+        homePage.clickOnAddToShipmentButton();
+        homePage.clickOnCurrentShipmentButton();
+
+        Stator_CurrentShipmentPage currentShipmentPage = new Stator_CurrentShipmentPage(Driver.instance);
+        currentShipmentPage.removeBatchFromShipment(BatchID.b25855);
+
+        Assert.assertFalse("Batch ID was found.", currentShipmentPage.verifyRowExistance(BatchID.b25855));
+    }
+
+    @Test
     public void add_Batch_To_Favorites()
     {
         Driver.navigate(URL.statorTesting);
@@ -68,7 +84,7 @@ public class StatorHomeTests
         Stator_FavoriteBatchesPage favoriteBatchesPage = new Stator_FavoriteBatchesPage(Driver.instance);
         favoriteBatchesPage.removeRowElementToFavorites(BatchID.b25855);
 
-        Assert.assertFalse(favoriteBatchesPage.verifyRowExistance(BatchID.b25855));
+        Assert.assertFalse("Batch ID was found.", favoriteBatchesPage.verifyRowExistance(BatchID.b25855));
     }
 
     @Test
