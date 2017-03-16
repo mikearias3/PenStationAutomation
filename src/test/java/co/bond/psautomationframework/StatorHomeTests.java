@@ -38,6 +38,7 @@ public class StatorHomeTests
 
         Stator_CurrentShipmentPage currentShipmentPage = new Stator_CurrentShipmentPage(Driver.instance);
         currentShipmentPage.clickBatchLink(BatchID.b25854);
+        //TODO: Change to assertion using verifyRowExistance method.
     }
 
     @Test
@@ -69,6 +70,7 @@ public class StatorHomeTests
 
         Stator_FavoriteBatchesPage favoriteBatchesPage = new Stator_FavoriteBatchesPage(Driver.instance);
         favoriteBatchesPage.clickOnRowLink(BatchID.b25855);
+        //TODO: Change to assertion using verifyRowExistance method.
     }
 
     @Test
@@ -129,6 +131,7 @@ public class StatorHomeTests
 
         Stator_ShipmentHistoryPage shipmentHistoryPage = new Stator_ShipmentHistoryPage(Driver.instance);
         shipmentHistoryPage.clickOnRowLink(BatchID.b25857);
+        //TODO: Change to assertion using verifyRowExistance method.
     }
 
     @Test
@@ -153,7 +156,7 @@ public class StatorHomeTests
     }
 
     @Test
-    public void search_For_A_Batch()
+    public void search_For_A_Valid_Batch()
     {
         Driver.navigate(URL.statorTesting);
 
@@ -161,7 +164,19 @@ public class StatorHomeTests
         navBar.searchForABatch(BatchID.b25855);
 
         Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
-        homePage.clickOnRowElement(BatchID.b25855);
+        Assert.assertTrue("Batch ID wasn't found.", homePage.verifyRowExistance(BatchID.b25855));
+    }
+
+    @Test
+    public void search_For_A_Invalid_Batch()
+    {
+        Driver.navigate(URL.statorTesting);
+
+        Stator_NavBar navBar = new Stator_NavBar(Driver.instance);
+        navBar.searchForABatch(BatchID.invalid);
+
+        Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
+        Assert.assertFalse("Batch ID was found.", homePage.verifyRowExistance(BatchID.invalid));
     }
 
     @After
