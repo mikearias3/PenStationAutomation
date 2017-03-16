@@ -4,6 +4,7 @@ import co.bond.psautomationframework.data.BatchID;
 import co.bond.psautomationframework.data.URL;
 import co.bond.psautomationframework.statorpageobjects.*;
 import junit.framework.Assert;
+import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -149,6 +150,18 @@ public class StatorHomeTests
 
         Stator_ShipmentSummaryPage shipmentSummaryPage = new Stator_ShipmentSummaryPage(Driver.instance);
         Assert.assertNotNull(shipmentSummaryPage.pageTitle);
+    }
+
+    @Test
+    public void search_For_A_Batch()
+    {
+        Driver.navigate(URL.statorTesting);
+
+        Stator_NavBar navBar = new Stator_NavBar(Driver.instance);
+        navBar.searchForABatch(BatchID.b25855);
+
+        Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
+        homePage.clickOnRowElement(BatchID.b25855);
     }
 
     @After

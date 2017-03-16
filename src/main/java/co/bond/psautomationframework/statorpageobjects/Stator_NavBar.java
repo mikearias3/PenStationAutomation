@@ -44,6 +44,13 @@ public class Stator_NavBar {
         Driver.wait(1);
         shipmentHistory.click();
     }
+
+    public void searchForABatch(String id) {
+        Driver.wait(1);
+        searchBar.sendKeys(id);
+        searchBar.submit();
+        Driver.wait(2);
+    }
 }
 
 
