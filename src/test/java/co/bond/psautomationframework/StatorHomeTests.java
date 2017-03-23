@@ -1,5 +1,6 @@
 package co.bond.psautomationframework;
 
+import co.bond.psautomationframework.data.ApiMockerHandler;
 import co.bond.psautomationframework.data.BatchID;
 import co.bond.psautomationframework.data.URL;
 import co.bond.psautomationframework.statorpageobjects.*;
@@ -177,6 +178,14 @@ public class StatorHomeTests
 
         Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
         Assert.assertFalse("Batch ID was found.", homePage.verifyRowExistance(BatchID.invalid));
+    }
+
+    @Test
+    public void testApiMocker()
+    {
+        ApiMockerHandler.modifyPayload();
+        Driver.navigate("http://apimocker.ps.bondco.io/api/v1.0/stationery-ordering/batches?status=10001");
+        Driver.wait(10);
     }
 
     @After
