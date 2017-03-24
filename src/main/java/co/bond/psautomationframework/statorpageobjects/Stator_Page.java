@@ -1,6 +1,8 @@
 package co.bond.psautomationframework.statorpageobjects;
 
 import co.bond.psautomationframework.Driver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -28,5 +30,21 @@ public class Stator_Page {
     public void clickOnAddToShipmentButton()
     {
         addToShipmentButton.click();
+    }
+
+    public boolean verifyRowExistance(String id) {
+        Driver.wait(1);
+        tableRowLink = null;
+
+        try {
+            tableRowLink = Driver.instance.findElement(By.linkText(id));
+        } catch (Exception e) {}
+
+
+        if (tableRowLink != null)
+        {
+            return true;
+        }
+        return false;
     }
 }

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e4a716b-ef2c-415a-a61b-8a31dd29a81b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/co/bond/psautomationframework/StatorHomeTests.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.class" afterPath="$PROJECT_DIR$/target/classes/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/co/bond/psautomationframework/statorpageobjects/Stator_Page.class" afterPath="$PROJECT_DIR$/target/classes/co/bond/psautomationframework/statorpageobjects/Stator_Page.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/data/BatchID.java" afterPath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/data/BatchID.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_CurrentShipmentPage.java" afterPath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_CurrentShipmentPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_FavoriteBatchesPage.java" afterPath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_FavoriteBatchesPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.java" afterPath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_Page.java" afterPath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_Page.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentHistoryPage.java" afterPath="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentHistoryPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/co/bond/psautomationframework/StatorHomeTests.java" afterPath="$PROJECT_DIR$/src/test/java/co/bond/psautomationframework/StatorHomeTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +30,8 @@
       <file leaf-file-name="StatorHomeTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/bond/psautomationframework/StatorHomeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="176" column="41" lean-forward="false" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
+            <state relative-caret-position="-373">
+              <caret line="44" column="44" lean-forward="true" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,11 +39,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Stator_CurrentShipmentPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_CurrentShipmentPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Stator_FavoriteBatchesPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_FavoriteBatchesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="330">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,8 +72,18 @@
       <file leaf-file-name="Stator_ShipmentHistoryPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentHistoryPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="370">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stator_ShipmentSummaryPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentSummaryPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -67,9 +92,34 @@
       <file leaf-file-name="Stator_HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="50" selection-end-column="21" />
+            <state relative-caret-position="370">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stator_NavBar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_NavBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+              <folding>
+                <marker date="1489675847000" expanded="true" signature="1347:1355" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stator_Page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_Page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-152">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,16 +132,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -124,18 +164,18 @@
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/StatorNavBar.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentSummaryPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/data/URL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_Page.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/Driver.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/Stator_ShipmentHistoryPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_FavoriteBatchesPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_CurrentShipmentPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_NavBar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/data/ApiMockerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentHistoryPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/data/BatchID.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/bond/psautomationframework/StatorHomeTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_FavoriteBatchesPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentHistoryPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_CurrentShipmentPage.java" />
       </list>
     </option>
   </component>
@@ -334,85 +374,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StatorHomeTests.add_Batch_To_Shipment">
-    <configuration default="false" name="StatorHomeTests.search_For_A_Invalid_Batch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="co.bond.psautomationframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PenStationAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="co.bond.psautomationframework" />
-      <option name="MAIN_CLASS_NAME" value="co.bond.psautomationframework.StatorHomeTests" />
-      <option name="METHOD_NAME" value="search_For_A_Invalid_Batch" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="StatorHomeTests.testApiMocker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="co.bond.psautomationframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PenStationAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="co.bond.psautomationframework" />
-      <option name="MAIN_CLASS_NAME" value="co.bond.psautomationframework.StatorHomeTests" />
-      <option name="METHOD_NAME" value="testApiMocker" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="StatorHomeTests.check_Batch_In_Shipment_History_After_Being_Sent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="co.bond.psautomationframework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PenStationAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="co.bond.psautomationframework" />
-      <option name="MAIN_CLASS_NAME" value="co.bond.psautomationframework.StatorHomeTests" />
-      <option name="METHOD_NAME" value="check_Batch_In_Shipment_History_After_Being_Sent" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.StatorHomeTests.remove_Batch_From_Favorites">
     <configuration default="false" name="StatorHomeTests.add_Batch_To_Favorites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -452,6 +414,84 @@
       <option name="PACKAGE_NAME" value="co.bond.psautomationframework" />
       <option name="MAIN_CLASS_NAME" value="co.bond.psautomationframework.StatorHomeTests" />
       <option name="METHOD_NAME" value="add_Batch_To_Shipment" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="StatorHomeTests.search_For_A_Valid_Batch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="co.bond.psautomationframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PenStationAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="co.bond.psautomationframework" />
+      <option name="MAIN_CLASS_NAME" value="co.bond.psautomationframework.StatorHomeTests" />
+      <option name="METHOD_NAME" value="search_For_A_Valid_Batch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="StatorHomeTests.search_For_A_Invalid_Batch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="co.bond.psautomationframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PenStationAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="co.bond.psautomationframework" />
+      <option name="MAIN_CLASS_NAME" value="co.bond.psautomationframework.StatorHomeTests" />
+      <option name="METHOD_NAME" value="search_For_A_Invalid_Batch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="StatorHomeTests.remove_Batch_From_Favorites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="co.bond.psautomationframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="PenStationAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="co.bond.psautomationframework" />
+      <option name="MAIN_CLASS_NAME" value="co.bond.psautomationframework.StatorHomeTests" />
+      <option name="METHOD_NAME" value="remove_Batch_From_Favorites" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -670,19 +710,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.search_For_A_Invalid_Batch" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.testApiMocker" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.check_Batch_In_Shipment_History_After_Being_Sent" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Favorites" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Shipment" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Favorites" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Shipment" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.search_For_A_Valid_Batch" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.search_For_A_Invalid_Batch" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.remove_Batch_From_Favorites" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Shipment" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Favorites" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.check_Batch_In_Shipment_History_After_Being_Sent" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.testApiMocker" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.search_For_A_Invalid_Batch" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.remove_Batch_From_Favorites" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.search_For_A_Invalid_Batch" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.search_For_A_Valid_Batch" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Shipment" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StatorHomeTests.add_Batch_To_Favorites" />
       </list>
     </recent_temporary>
   </component>
@@ -715,20 +755,20 @@
     <history-entry file="StatorHomeTests_check_Batch_In_Shipment_History_After_Being_Sent - 2017.03.24 at 10h 41m 50s.xml">
       <configuration name="StatorHomeTests.check_Batch_In_Shipment_History_After_Being_Sent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatorHomeTests_search_For_A_Valid_Batch - 2017.03.16 at 15h 29m 59s.xml">
+    <history-entry file="StatorHomeTests_remove_Batch_From_Favorites - 2017.03.24 at 11h 00m 17s.xml">
+      <configuration name="StatorHomeTests.remove_Batch_From_Favorites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StatorHomeTests_search_For_A_Valid_Batch - 2017.03.24 at 10h 50m 28s.xml">
       <configuration name="StatorHomeTests.search_For_A_Valid_Batch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatorHomeTests_testApiMocker - 2017.03.23 at 10h 49m 57s.xml">
-      <configuration name="StatorHomeTests.testApiMocker" configurationId="JUnit" />
+    <history-entry file="StatorHomeTests_search_For_A_Valid_Batch - 2017.03.24 at 10h 51m 24s.xml">
+      <configuration name="StatorHomeTests.search_For_A_Valid_Batch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatorHomeTests_testApiMocker - 2017.03.23 at 10h 52m 38s.xml">
-      <configuration name="StatorHomeTests.testApiMocker" configurationId="JUnit" />
+    <history-entry file="StatorHomeTests_search_For_A_Valid_Batch - 2017.03.24 at 10h 56m 34s.xml">
+      <configuration name="StatorHomeTests.search_For_A_Valid_Batch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatorHomeTests_testApiMocker - 2017.03.23 at 12h 22m 49s.xml">
-      <configuration name="StatorHomeTests.testApiMocker" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StatorHomeTests_testApiMocker - 2017.03.23 at 12h 23m 18s.xml">
-      <configuration name="StatorHomeTests.testApiMocker" configurationId="JUnit" />
+    <history-entry file="StatorHomeTests_search_For_A_Valid_Batch - 2017.03.24 at 10h 57m 56s.xml">
+      <configuration name="StatorHomeTests.search_For_A_Valid_Batch" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StatorHomeTests_testApiMocker - 2017.03.23 at 12h 32m 15s.xml">
       <configuration name="StatorHomeTests.testApiMocker" configurationId="JUnit" />
@@ -748,7 +788,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28419656" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28419656" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -773,7 +813,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -839,7 +879,6 @@
         <state relative-caret-position="465">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1489675847000" expanded="true" signature="1347:1355" ph="{...}" />
           </folding>
         </state>
@@ -918,7 +957,6 @@
         <state relative-caret-position="465">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1489675847000" expanded="true" signature="1347:1355" ph="{...}" />
           </folding>
         </state>
@@ -996,7 +1034,6 @@
         <state relative-caret-position="330">
           <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1489675847000" expanded="true" signature="1347:1355" ph="{...}" />
           </folding>
         </state>
@@ -1064,7 +1101,6 @@
         <state relative-caret-position="330">
           <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1489675847000" expanded="true" signature="1347:1355" ph="{...}" />
           </folding>
         </state>
@@ -1148,23 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentSummaryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1193,25 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_NavBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1489675847000" expanded="true" signature="1347:1355" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_CurrentShipmentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1230,22 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="50" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentHistoryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/data/BatchID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1256,16 +1240,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_FavoriteBatchesPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="330">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_NavBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding>
+            <marker date="1489675847000" expanded="true" signature="1347:1355" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentHistoryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_ShipmentSummaryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/bond/psautomationframework/statorpageobjects/Stator_CurrentShipmentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/bond/psautomationframework/StatorHomeTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="176" column="41" lean-forward="false" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
+        <state relative-caret-position="-373">
+          <caret line="44" column="44" lean-forward="true" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

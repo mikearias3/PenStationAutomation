@@ -36,18 +36,4 @@ public class Stator_HomePage extends Stator_Page{
         tableRowFavorite.click();
     }
 
-    public boolean verifyRowExistance(String id) {
-        tableRowLink = null;
-
-        try {
-            tableRowLink = instance.findElement(By.linkText(id));
-        } catch (Exception e) {}
-
-
-        if (tableRowLink != null)
-        {
-            return true;
-        }
-        return false;
-    }
 }

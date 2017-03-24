@@ -12,7 +12,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 /**
  * Created by mikearias on 3/7/17.
  */
-public class Stator_CurrentShipmentPage {
+public class Stator_CurrentShipmentPage extends Stator_Page {
 
     private WebDriver instance;
 
@@ -61,18 +61,4 @@ public class Stator_CurrentShipmentPage {
         submitShipmentButton.click();
     }
 
-    public boolean verifyRowExistance(String id) {
-        tableRowLink = null;
-
-        try {
-            tableRowLink = instance.findElement(By.linkText(id));
-        } catch (Exception e) {}
-
-
-        if (tableRowLink != null)
-        {
-            return true;
-        }
-        return false;
-    }
 }
