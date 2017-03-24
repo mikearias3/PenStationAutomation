@@ -33,13 +33,12 @@ public class StatorHomeTests
         Driver.navigate(URL.statorTesting);
 
         Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
-        homePage.selectRowElement(BatchID.b25854);
+        homePage.selectRowElement(BatchID.b25855);
         homePage.clickOnAddToShipmentButton();
         homePage.clickOnCurrentShipmentButton();
 
         Stator_CurrentShipmentPage currentShipmentPage = new Stator_CurrentShipmentPage(Driver.instance);
-        currentShipmentPage.clickBatchLink(BatchID.b25854);
-        //TODO: Change to assertion using verifyRowExistance method.
+        Assert.assertTrue("Batch ID wasn't found.", currentShipmentPage.verifyRowExistance(BatchID.b25855));
     }
 
     @Test
@@ -70,8 +69,7 @@ public class StatorHomeTests
         navBar.clickOnFavoriteBatchesButton();
 
         Stator_FavoriteBatchesPage favoriteBatchesPage = new Stator_FavoriteBatchesPage(Driver.instance);
-        favoriteBatchesPage.clickOnRowLink(BatchID.b25855);
-        //TODO: Change to assertion using verifyRowExistance method.
+        Assert.assertTrue("Batch ID wasn't found.", favoriteBatchesPage.verifyRowExistance(BatchID.b25855));
     }
 
     @Test
@@ -120,7 +118,7 @@ public class StatorHomeTests
         Driver.navigate(URL.statorTesting);
 
         Stator_HomePage home = new Stator_HomePage(Driver.instance);
-        home.selectRowElement(BatchID.b25857);
+        home.selectRowElement(BatchID.b25858);
         home.clickOnAddToShipmentButton();
         home.clickOnCurrentShipmentButton();
 
@@ -131,8 +129,7 @@ public class StatorHomeTests
         navBar.clickOnShipmentHistoryButton();
 
         Stator_ShipmentHistoryPage shipmentHistoryPage = new Stator_ShipmentHistoryPage(Driver.instance);
-        shipmentHistoryPage.clickOnRowLink(BatchID.b25857);
-        //TODO: Change to assertion using verifyRowExistance method.
+        Assert.assertTrue("Batch ID wasn't found.", shipmentHistoryPage.verifyRowExistance(BatchID.b25858));
     }
 
     @Test

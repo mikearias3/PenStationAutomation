@@ -26,4 +26,19 @@ public class Stator_ShipmentHistoryPage extends Stator_Page {
         tableRowCheckbox = instance.findElement(By.xpath("//tr/td/ul/li/div/a[contains(text(), '" + id + "')]/../../../../../td/div/input"));
         tableRowCheckbox.click();
     }
+
+    public boolean verifyRowExistance(String id) {
+        tableRowLink = null;
+
+        try {
+            tableRowLink = instance.findElement(By.linkText(id));
+        } catch (Exception e) {}
+
+
+        if (tableRowLink != null)
+        {
+            return true;
+        }
+        return false;
+    }
 }
