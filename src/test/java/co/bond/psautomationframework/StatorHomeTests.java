@@ -2,6 +2,7 @@ package co.bond.psautomationframework;
 
 import co.bond.psautomationframework.data.ApiMockerHandler;
 import co.bond.psautomationframework.data.BatchID;
+import co.bond.psautomationframework.data.BatchSet;
 import co.bond.psautomationframework.data.URL;
 import co.bond.psautomationframework.statorpageobjects.*;
 import junit.framework.Assert;
@@ -180,7 +181,7 @@ public class StatorHomeTests
     @Test
     public void testApiMocker()
     {
-        ApiMockerHandler.modifyPayload();
+        ApiMockerHandler.modifyPayload(BatchSet.fullBatchSet);
         Driver.navigate("http://apimocker.ps.bondco.io/api/v1.0/stationery-ordering/batches?status=10001");
         Driver.wait(10);
     }
