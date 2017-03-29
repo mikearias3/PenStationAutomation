@@ -11,4 +11,8 @@ public class BatchID {
     public static String b25857 = "25857";
     public static String invalid = "invalid";
     public static String b25858 = "25858";
+    public static String b25860 = "25860";
+    public static String b25861 = "25861";
+    public static String b25862 = "25862";
+    public static String b25864 = "25864";
 }

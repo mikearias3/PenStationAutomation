@@ -108,9 +108,24 @@ public class StatorHomeTests
     }
 
     @Test
-    public void submir_Order_With_Several_Batches()
+    public void submit_Order_With_Several_Batches()
     {
-        //Waiting for Quantity to receive an ID for this.
+        Driver.navigate(URL.statorTesting);
+
+        Stator_HomePage home = new Stator_HomePage(Driver.instance);
+        home.selectRowElement(BatchID.b25862);
+        home.selectRowElement(BatchID.b25864);
+        home.clickOnAddToShipmentButton();
+        home.clickOnCurrentShipmentButton();
+
+        Stator_CurrentShipmentPage shipmentPage = new Stator_CurrentShipmentPage(Driver.instance);
+        shipmentPage.modifyBatchQuantity(BatchID.b25862, 5);
+        shipmentPage.modifyBatchQuantity(BatchID.b25864, 2);
+        Assert.assertTrue("Batches counter is incorrect", shipmentPage.verifyBatchesCounter(7));
+        shipmentPage.submitShipment();
+
+        Stator_ShipmentSummaryPage shipmentSummaryPage = new Stator_ShipmentSummaryPage(Driver.instance);
+        Assert.assertNotNull(shipmentSummaryPage.pageTitle);
     }
 
     @Test

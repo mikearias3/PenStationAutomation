@@ -23,6 +23,7 @@ public class Stator_CurrentShipmentPage extends Stator_Page {
     private WebElement batchFavoriteButton;
     private WebElement batchRemoveButton;
     private WebElement tableRowLink;
+    private WebElement quantityCounter;
 
     public Stator_CurrentShipmentPage(WebDriver instance) {
         this.instance = instance;
@@ -32,9 +33,10 @@ public class Stator_CurrentShipmentPage extends Stator_Page {
 
     public void modifyBatchQuantity(String id, int quantity)
     {
-        throw new NotImplementedException();
-//        batchQuantity = instance.findElement(By.id(id));
-//        batchQuantity.sendKeys(Integer.toString(quantity));
+        Driver.wait(1);
+        batchQuantity = instance.findElement(By.id("quantity-" + id));
+        batchQuantity.clear();
+        batchQuantity.sendKeys(Integer.toString(quantity));
     }
 
     public void addBatchToFavorites(String id)

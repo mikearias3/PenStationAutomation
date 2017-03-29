@@ -47,4 +47,15 @@ public class Stator_Page {
         }
         return false;
     }
+
+    public boolean verifyBatchesCounter(int quantityTotal) {
+        Driver.wait(1);
+        String linkText = currentShipmentButton.getText();
+        if (linkText.contains(Integer.toString(quantityTotal)))
+        {
+            return true;
+        }
+
+        return false;
+    }
 }
