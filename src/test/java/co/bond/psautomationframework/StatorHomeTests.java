@@ -129,6 +129,18 @@ public class StatorHomeTests
     }
 
     @Test
+    public void submit_Order_With_0_Batches()
+    {
+        Driver.navigate(URL.statorTesting);
+
+        Stator_HomePage homePage = new Stator_HomePage(Driver.instance);
+        homePage.clickOnCurrentShipmentButton();
+
+        Stator_CurrentShipmentPage shipmentPage = new Stator_CurrentShipmentPage(Driver.instance);
+        Assert.assertFalse("Submit Shipment button is enabled", shipmentPage.verifySubmitShipmentButtonState());
+    }
+
+    @Test
     public void check_Batch_In_Shipment_History_After_Being_Sent()
     {
         Driver.navigate(URL.statorTesting);

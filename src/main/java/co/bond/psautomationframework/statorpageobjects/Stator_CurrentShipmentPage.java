@@ -63,4 +63,11 @@ public class Stator_CurrentShipmentPage extends Stator_Page {
         submitShipmentButton.click();
     }
 
+    public boolean verifySubmitShipmentButtonState() {
+        if (submitShipmentButton.isEnabled())
+        {
+            return true;
+        }
+        return false;
+    }
 }
