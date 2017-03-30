@@ -5,4 +5,5 @@ package co.bond.psautomationframework.data;
  */
 public class URL {
     public static String statorTesting = "http://stator-testing.ps.bondco.io";
+    public static String apiMocker = "http://apimocker.ps.bondco.io/api/v1.0/stationery-ordering/batches?status=10001";
 }

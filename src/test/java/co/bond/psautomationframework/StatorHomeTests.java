@@ -209,7 +209,7 @@ public class StatorHomeTests
     public void testApiMocker()
     {
         ApiMockerHandler.modifyPayload(BatchSet.fullBatchSet);
-        Driver.navigate("http://apimocker.ps.bondco.io/api/v1.0/stationery-ordering/batches?status=10001");
+        Driver.navigate(URL.apiMocker);
         Driver.wait(10);
     }
 
