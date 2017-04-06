@@ -1,9 +1,6 @@
 package co.bond.psautomationframework;
 
-import co.bond.psautomationframework.data.ApiMockerHandler;
-import co.bond.psautomationframework.data.BatchID;
-import co.bond.psautomationframework.data.BatchSet;
-import co.bond.psautomationframework.data.URL;
+import co.bond.psautomationframework.data.*;
 import co.bond.psautomationframework.robindexpageobjects.Robindex_OverviewPage;
 import co.bond.psautomationframework.statorpageobjects.*;
 import junit.framework.Assert;
@@ -27,6 +24,21 @@ public class RobindexTests
 
         Robindex_OverviewPage overviewPage = new Robindex_OverviewPage(Driver.instance);
         Assert.assertTrue("Page failed to load", overviewPage.verifyOverviewPage());
+    }
+
+    @Test
+    public void verify_Robot_Data_On_List_View()
+    {
+        Driver.navigate(URL.robindexTesting);
+
+        Robindex_OverviewPage overviewPage = new Robindex_OverviewPage(Driver.instance);
+        overviewPage.clickOnRobotName(RobotName.sara);
+        overviewPage.clickOnListButton();
+        Assert.assertEquals("staging", overviewPage.getRobotClassification(RobotName.sara));
+        Assert.assertEquals("healthy", overviewPage.getRobotHealthStatus(RobotName.sara));
+        Assert.assertEquals("1.1.0", overviewPage.getRobotToolOpVersion(RobotName.sara));
+        Assert.assertEquals("January 9th, 2017", overviewPage.getRobotLastMaintained(RobotName.sara));
+        overviewPage.clickOnRobotEditButton(RobotName.sara);
     }
 
     @After
