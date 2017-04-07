@@ -16,12 +16,14 @@ public class Robindex_Page {
     private WebElement searchBox;
 
     public void clickOnListButton() {
+        Driver.wait(1);
         listButton.click();
         listButton.click();
         Driver.wait(2);
     }
 
     public void clickOnAddButton() {
+        Driver.wait(1);
         addButton.click();
         addButton.click();
         Driver.wait(2);

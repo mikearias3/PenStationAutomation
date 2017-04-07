@@ -41,6 +41,23 @@ public class RobindexTests
         overviewPage.clickOnRobotEditButton(RobotName.sara);
     }
 
+    @Test
+    public void verify_Robot_Data_On_Other_Page_From_List_View()
+    {
+        Driver.navigate(URL.robindexTesting);
+
+        Robindex_OverviewPage overviewPage = new Robindex_OverviewPage(Driver.instance);
+        overviewPage.navigatePagination(2);
+        overviewPage.clickOnRobotName(RobotName.testRobot);
+        overviewPage.clickOnListButton();
+        overviewPage.navigatePagination(2);
+        Assert.assertEquals("staging", overviewPage.getRobotClassification(RobotName.testRobot));
+        Assert.assertEquals("healthy", overviewPage.getRobotHealthStatus(RobotName.testRobot));
+        Assert.assertEquals("1.1.0", overviewPage.getRobotToolOpVersion(RobotName.testRobot));
+        Assert.assertEquals("January 31st, 2017", overviewPage.getRobotLastMaintained(RobotName.testRobot));
+        overviewPage.clickOnRobotEditButton(RobotName.testRobot);
+    }
+
     @After
     public void cleanUp()
     {

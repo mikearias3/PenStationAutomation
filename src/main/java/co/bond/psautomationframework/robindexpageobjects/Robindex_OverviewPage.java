@@ -42,7 +42,7 @@ public class Robindex_OverviewPage extends Robindex_Page {
 
         if(text.matches("Robot Status Overview")){
             return true;
-        }else {
+        } else {
             return false;
         }
     }

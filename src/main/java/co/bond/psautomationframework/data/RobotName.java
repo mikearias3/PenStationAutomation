@@ -5,4 +5,5 @@ package co.bond.psautomationframework.data;
  */
 public class RobotName {
     public static String sara = "sara";
+    public static String testRobot = "testRobot";
 }
